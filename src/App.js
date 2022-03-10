@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { useContext } from 'react';
+import { myAppContext } from './store/appContext';
 
 function App() {
+
+
+  const context = useContext(myAppContext)
+
   return (
     <div className="App">
       <header className="App-header">
